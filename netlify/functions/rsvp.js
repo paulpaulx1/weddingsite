@@ -8,7 +8,7 @@ exports.handler = async (event, context) => {
   const { name, email, attending, guests, dietary, song } = JSON.parse(event.body);
 
   // Email setup (you'll need to add your email credentials)
-  const transporter = nodemailer.createTransporter({
+  const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: process.env.EMAIL_USER,
