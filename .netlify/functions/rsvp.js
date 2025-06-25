@@ -29,7 +29,7 @@ Song request: ${song || 'None'}
   try {
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: 'bessie@yourdomain.com', // Bessie's email
+      to: 'bessie116@gmail.com', // Bessie's email
       subject: `RSVP: ${name}`,
       text: emailContent
     });
