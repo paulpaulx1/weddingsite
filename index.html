@@ -274,7 +274,7 @@
             button.disabled = true;
             
             try {
-                const response = await fetch('/netlify/functions/rsvp', {
+                const response = await fetch('./netlify/functions/rsvp', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
