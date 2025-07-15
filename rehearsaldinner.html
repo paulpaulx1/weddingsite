@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rehearsal Dinner - Bessie & Paul</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+          "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        color: #2c2c2c;
+        background: #fefefe;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 200;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        color: #1a1a1a;
+      }
+
+      .ampersand {
+        font-style: normal;
+        color: #8b7355;
+      }
+
+      .subtitle {
+        font-size: 1.4rem;
+        color: #8b7355;
+        font-weight: 300;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+      }
+
+      .date-location {
+        font-size: 1.1rem;
+        color: #666;
+        font-weight: 300;
+        letter-spacing: 1px;
+      }
+
+      .section {
+        margin: 50px 0;
+        padding: 30px 0;
+        border-top: 1px solid #e8e8e8;
+      }
+
+      .section:first-of-type {
+        border-top: none;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #8b7355;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+        color: #444;
+      }
+
+      .venue-details {
+        padding: 25px;
+        margin: 20px 0;
+        border: 1px solid #ddd;
+        position: relative;
+      }
+
+      .rsvp-form {
+        background: #f9f9f9;
+        padding: 30px;
+        margin: 20px 0;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 400;
+        color: #666;
+        letter-spacing: 1px;
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        background: white;
+        font-family: inherit;
+        font-size: 1rem;
+      }
+
+      input:focus,
+      textarea:focus,
+      select:focus {
+        outline: none;
+        border-color: #8b7355;
+      }
+
+      button {
+        background: #8b7355;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        font-family: inherit;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      button:hover {
+        background: #6d5940;
+      }
+
+      .schedule {
+        list-style: none;
+      }
+
+      .schedule li {
+        padding: 10px 0;
+        border-bottom: 1px dotted #ddd;
+      }
+
+      .schedule li:last-child {
+        border-bottom: none;
+      }
+
+      .time {
+        font-weight: 500;
+        color: #8b7355;
+      }
+
+      .back-link {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 30px;
+        border-top: 1px solid #e8e8e8;
+      }
+
+      .back-link a {
+        color: #8b7355;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-weight: 400;
+      }
+
+      .back-link a:hover {
+        text-decoration: underline;
+      }
+
+      .photo-placeholder {
+        width: 100%;
+        height: 400px;
+        background-image: url("./public/images/IMG_1956.jpg");
+        background-size: cover;
+        background-position: center;
+        margin: 30px 0;
+        border-radius: 2px;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2.5rem;
+          letter-spacing: 2px;
+        }
+
+        .container {
+          padding: 20px 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Bessie <span class="ampersand">&</span> Paul</h1>
+        <div class="subtitle">Rehearsal Dinner</div>
+        <div class="date-location">
+          October 10, 2025 • 7:00 PM<br />
+          The Wythe Hotel, Williamsburg
+        </div>
+      </header>
+
+      <div class="photo-placeholder"></div>
+
+      <section class="section">
+        <h2>Details</h2>
+        <p>
+          Join us the evening before our wedding for dinner at The Wythe Hotel.
+        </p>
+
+        <div class="venue-details">
+          <strong>The Wythe Hotel</strong><br />
+          80 Wythe Ave, Brooklyn, NY 11249<br />
+          Williamsburg
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Schedule</h2>
+        <ul class="schedule">
+          <li><span class="time">7:00 PM</span> — Arrival & cocktails</li>
+          <li><span class="time">7:30 PM</span> — Dinner service</li>
+          <li>
+            <span class="time">10:00 PM</span> — Wrap up (early night before the
+            wedding!)
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>RSVP</h2>
+        <div class="rsvp-form">
+          <form action="https://formspree.io/f/xpwroldd" method="POST">
+            <input type="hidden" name="event" value="rehearsal_dinner" />
+
+            <div class="form-group">
+              <label for="name">Name(s)</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="attending"
+                >Will you be attending the rehearsal dinner?</label
+              >
+              <select id="attending" name="attending" required>
+                <option value="">Please select</option>
+                <option value="yes">Yes, we'll be there</option>
+                <option value="no">Sorry, can't make it</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="guests">Number of guests (including yourself)</label>
+              <select id="guests" name="guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="dietary">Dietary restrictions or allergies</label>
+              <textarea
+                id="dietary"
+                name="dietary"
+                rows="3"
+                placeholder="Let us know about any dietary needs..."
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Special notes or questions</label>
+              <textarea
+                id="notes"
+                name="notes"
+                rows="2"
+                placeholder="Anything else we should know?"
+              ></textarea>
+            </div>
+
+            <button type="submit">Send RSVP</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Getting There</h2>
+        <p>
+          <strong>By subway:</strong> Take the L train to Bedford Ave
+          (Williamsburg). The hotel is a short walk from the station.
+        </p>
+        <p>
+          <strong>By car:</strong> Valet parking available at the hotel. Street
+          parking also available in the area.
+        </p>
+        <p>
+          <strong>By rideshare:</strong> Easy pickup and drop-off directly at
+          the hotel entrance.
+        </p>
+      </section>
+
+      <div class="back-link">
+        <a href="index.html">← Back to Wedding Details</a>
+      </div>
+    </div>
+  </body>
+</html>
